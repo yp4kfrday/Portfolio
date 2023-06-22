@@ -1,6 +1,6 @@
 import React from 'react'
 
-const AboutCard = ({ icon, title, description }) => {
+const AboutCardItem = ({ icon, title, description }) => {
   return (
     <article className='about__card'>
       {icon}
@@ -10,4 +10,4 @@ const AboutCard = ({ icon, title, description }) => {
   )
 }
 
-export default AboutCard
+export default AboutCardItem

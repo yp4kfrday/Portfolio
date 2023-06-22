@@ -5,10 +5,10 @@ import { BsCheckCircle } from 'react-icons/bs'
 
 const Experience = () => {
   const frontendExperience = [
-    { title: 'HTML', experience: 'Experienced' },
-    { title: 'CSS', experience: 'Experienced' },
-    { title: 'JavaScript', experience: 'Experienced' },
-    { title: 'React', experience: 'Experienced' },
+    { title: 'HTML', experience: 'Intermediate' },
+    { title: 'CSS', experience: 'Intermediate' },
+    { title: 'JavaScript', experience: 'Intermediate' },
+    { title: 'React', experience: 'Intermediate' },
     { title: 'SCSS', experience: 'Experienced' },
     { title: 'JQuery', experience: 'Experienced' },
     { title: 'TypeScript', experience: 'Experienced' },
@@ -22,14 +22,14 @@ const Experience = () => {
   ];
 
   const otherExperience = [
-    { title: 'Git', experience: 'Experienced' },
+    { title: 'Git', experience: 'Intermediate' },
     { title: 'Axios-Fetch', experience: 'Experienced' },
   ]
 
   return (
     <section id='experience'>
-      <h5>Skills</h5>
-      <h2>My Experience</h2>
+      <h5>Навыки</h5>
+      <h2>Опыт в технологиях</h2>
 
       <div className='container experience__container'>
         <div className='experience__frontend'>
