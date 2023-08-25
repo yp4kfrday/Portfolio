@@ -1,7 +1,7 @@
 import React from 'react'
 import './about.css'
 
-import FULLME from '../../assets/mefull.jpg'
+import FullMe from '../../assets/mefull.jpg'
 import { BsFolder } from "react-icons/bs"
 import { BiAward } from "react-icons/bi";
 import AboutCard from './AboutCardItem';
@@ -10,11 +10,11 @@ const About = () => {
   const aboutItemsData = [
     {
       icon: <BiAward />,
-      title: 'Я работал над несколькими проектами в области веб-разработки, в которых использовал различные технологии, например: ReactJS, JQuery, Lovefield, ReactJS, TypeScript, Redux Toolkit и jQuery',
+      title: 'Разработал больше 6 проектов. Постоянно самосовершенствуюсь и практикую новые технологии.',
     },
     {
       icon: <BsFolder />,
-      title: 'Мною было создано 6 проектов, познакомиться с которыми вы сможете ниже',
+      title: 'В рамках реализации учебных проектов были спроектированы приложения на C++, C#, Python.',
     },
   ];
 
@@ -25,14 +25,19 @@ const About = () => {
 
         <div className='about__content'>
           <div className="about__cards">
-          {aboutItemsData.map((item, index) => (
-            <AboutCard key={index} icon={item.icon} title={item.title} description={item.description} />
-          ))}
+            {aboutItemsData.map((item, index) => (
+              <AboutCard key={index} icon={item.icon} title={item.title} description={item.description} />
+            ))}
           </div>
 
           <p>
-          Я также хотел бы отметить, что я проходил курс по веб-разработке от университета. В процессе обучения я углубил свои знания в области фронтенд-разработки, изучил различные концепции и лучшие практики, и получил опыт работы с различными инструментами и технологиями, необходимыми для создания современных веб-приложений.
-В целом, мои проекты и образование подготовили меня к решению сложных задач в области веб-разработки и позволили мне стать опытным разработчиком с широким спектром навыков.
+            TrueCost - Fullstack developer<br/>
+            Проектирование веб-приложения. Переписывание Legacy на современный стек - React, graphsql, typescript. Июнь 2023 по н.в. (3 месяца)
+            <br/><br/>
+            Университет Иннополис(ЦК в вузе). Самара - Web-разработчик<br/>
+            В рамках прохождения стажировки по программе доп. образования от университета "Иннополис"(Казань), велась разработка web-приложения с применением библиотеки JQuery, а также базой данных Lovefield. Курс по данной программе длился 12 месяцев.
+
+
           </p>
 
           <a href='#contact' className='btn btn-primary'>Написать</a>
@@ -40,10 +45,10 @@ const About = () => {
 
         <div className="about__me">
           <div className="about__me-image">
-            <img src={FULLME} alt="About Image" />
+            <img src={FullMe} alt="About Image" />
           </div>
         </div>
-        
+
       </div>
     </section>
   )

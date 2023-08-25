@@ -5,12 +5,13 @@
 }
 
 .portfolio__item {
+    position: relative;
     background: var(--color-bg-variant);
     padding: 1.3rem;
     border-radius: 2rem;
     border: 1px solid transparent;
-    transition: var(--transition)
-}
+    transition: var(--transition);
+  }
 
 .portfolio__item:hover {
     border-color: var(--color-primary-variant);
@@ -30,7 +31,14 @@
     display: flex;
     gap: 1rem;
     margin-bottom: 1rem;
-}
+    padding-top: 1rem;
+  }
+
+  .portfolio__item-button {
+    position: absolute;
+    bottom: 1.2rem;
+    left: 2rem;
+  }
 
 /* ==== media (medium dev) === */
 
@@ -39,6 +47,13 @@
     .portfolio__container {
         grid-template-columns: 1fr 1fr;
     }
+
+    .portfolio__item-button {
+        margin-top: 4rem;
+        left: 0;
+        left: 50%; 
+        transform: translateX(-50%)
+      }
 }
 
 /* ==== media (small dev) === */

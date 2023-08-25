@@ -1,6 +1,6 @@
 .experience__container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
 
@@ -10,6 +10,7 @@
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition) ;
+    
 }
 
 .experience__container > div:hover {
@@ -44,7 +45,7 @@
 
 @media screen and (max-width: 1024px) {
     .experience__container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 2fr;
     }
 
     .experience__container > div {
@@ -62,11 +63,18 @@
 
 @media screen and (max-width: 600px) {
     .experience__container {
-        gap: 1rem;
+        display: block;
+    }
+
+    .experience__content {
+        padding: 1rem;
+        grid-template-columns: 1fr 1fr;
     }
 
     .experience__container > div {
-        width: 95%;
+        width: 100%;
         padding: 2rem 0rem;
+        margin: 1rem auto;
     }
+
 }

@@ -5,25 +5,37 @@ import { BsCheckCircle } from 'react-icons/bs'
 
 const Experience = () => {
   const frontendExperience = [
-    { title: 'HTML', experience: 'Intermediate' },
-    { title: 'CSS', experience: 'Intermediate' },
-    { title: 'JavaScript', experience: 'Intermediate' },
-    { title: 'React', experience: 'Intermediate' },
-    { title: 'SCSS', experience: 'Experienced' },
-    { title: 'JQuery', experience: 'Experienced' },
-    { title: 'TypeScript', experience: 'Experienced' },
-    { title: 'Redux-Toolkit', experience: 'Experienced' },
+    { title: 'HTML', experience: 'junior' },
+    { title: 'CSS', experience: 'junior' },
+    { title: 'JavaScript', experience: 'junior' },
+    { title: 'React', experience: 'junior' },
+    { title: 'SCSS', experience: 'junior' },
+    { title: 'JQuery', experience: 'junior' },
+    { title: 'TypeScript', experience: 'junior' },
+    { title: 'Redux-Toolkit', experience: 'had experience' },
+    { title: 'Tailwind', experience: 'had experience' },
+    { title: 'Figma', experience: 'had experience' },
+    { title: 'Css modules', experience: 'junior' },
   ];
 
   const backendExperience = [
-    { title: 'NodeJS', experience: 'Experienced' },
-    { title: 'LoveField', experience: 'Experienced' },
-    { title: 'C++', experience: 'Experienced' },
+    { title: 'NodeJS', experience: 'junior' },
+    { title: 'LoveField', experience: 'had experience' },
+    { title: 'C++', experience: 'had experience' },
+    { title: 'Next.js', experience: 'had experience' },
+    { title: 'MongoDB', experience: 'had experience' },
+    { title: 'RabbitMq', experience: 'had experience' },
+    { title: 'SQL', experience: 'had experience' },
+    { title: 'Golang ', experience: 'had experience' },
+    
   ];
 
   const otherExperience = [
-    { title: 'Git', experience: 'Intermediate' },
-    { title: 'Axios-Fetch', experience: 'Experienced' },
+    { title: 'Git', experience: 'junior' },
+    { title: 'Axios-Fetch', experience: 'had experience' },
+    { title: 'Prisma', experience: 'had experience'},
+    { title: 'OC Ubuntu', experience: 'had experience'},
+    { title: 'Docker', experience: 'had experience'},
   ]
 
   return (
@@ -32,7 +44,7 @@ const Experience = () => {
       <h2>Опыт в технологиях</h2>
 
       <div className='container experience__container'>
-        <div className='experience__frontend'>
+        <div className='experience__other'>
           <h3>Frontend</h3>
           <div className='experience__content'>
             {frontendExperience.map((exp, index) => (
@@ -47,7 +59,7 @@ const Experience = () => {
           </div>
         </div>
 
-        <div className='experience__backend'>
+        <div className='experience__other'>
           <h3>Backend</h3>
           <div className='experience__content'>
           {backendExperience.map((exp, index) => (
